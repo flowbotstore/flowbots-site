@@ -1,76 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>FlowBots Store</title>
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowBots Store</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
 <header>
+  <div class="logo">⚡ FlowBots Store</div>
 
-<div class="logo">
-🚀 FlowBots Store
-</div>
+  <nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#feedbacks">Feedbacks</a>
+    <a href="#termos">Termos</a>
+  </nav>
 
-<input type="text" placeholder="Buscar produtos...">
-
-<nav>
-<button>Discord</button>
-<button>Carrinho</button>
-</nav>
-
+  <a class="btn-discord" href="#" target="_blank">Discord</a>
 </header>
 
 <section class="hero">
+  <div>
+    <span class="tag">Loja digital</span>
+    <h1>Produtos digitais com entrega rápida</h1>
+    <p>Nitro, Spotify, Keys Steam, jogos PC, Minecraft e automações.</p>
 
-<h1>LOJA DIGITAL</h1>
-
-<p>Nitro • Spotify • Jogos • Keys • Bots</p>
-
+    <div class="hero-buttons">
+      <a href="#produtos" class="btn-primary">Ver produtos</a>
+      <a href="#termos" class="btn-secondary">Ler termos</a>
+    </div>
+  </div>
 </section>
 
-<section class="categorias">
-
-<h2>Categorias</h2>
-
-<div class="cards">
-
-<div class="card">
-🎮
-<h3>Jogos PC</h3>
-</div>
-
-<div class="card">
-🚀
-<h3>Nitro</h3>
-</div>
-
-<div class="card">
-🎧
-<h3>Spotify</h3>
-</div>
-
-<div class="card">
-🔑
-<h3>Keys Steam</h3>
-</div>
-
-<div class="card">
-🤖
-<h3>Bots</h3>
-</div>
-
-</div>
-
+<section class="stats">
+  <div>
+    <h3>⚡ Entrega rápida</h3>
+    <p>Atendimento direto pelo Discord.</p>
+  </div>
+  <div>
+    <h3>🔐 Compra segura</h3>
+    <p>Compre apenas com staff oficial.</p>
+  </div>
+  <div>
+    <h3>⭐ Feedbacks</h3>
+    <p>Envie avaliação após comprar.</p>
+  </div>
 </section>
+
+<section id="produtos" class="produtos">
+  <h2>Catálogo</h2>
+
+  <input id="search" type="text" placeholder="Buscar produto..." />
+
+  <div class="grid" id="productGrid">
+
+    <div class="card" data-name="spotify premium">
+      <span>🎧</span>
+      <h3>Spotify Premium</h3>
+      <p>Conta 3 meses full acesso.</p>
+      <strong>R$7</strong>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card" data-name="discord nitro link">
+      <span>🚀</span>
+      <h3>Nitro Link</h3>
+      <p>1 mês ou 3 meses para contas elegíveis.</p>
+      <strong>A partir de R$3</strong>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card" data-name="keys steam">
+      <span>🔑</span>
+      <h3>Keys Steam</h3>
+      <p>Keys variadas para Steam.</p>
+      <strong>A partir de R$10</strong>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card" data-name="jogos offline pc">
+      <span>🎮</span>
+      <h3>Jogos Offline PC</h3>
+      <p>Catálogo com vários jogos disponíveis.</p>
+      <strong>R$3</strong>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card" data-name="minecraft bedrock">
+      <span>⛏️</span>
+      <h3>Minecraft Bedrock</h3>
+      <p>Método de desbloqueio na conta.</p>
+      <strong>R$8</strong>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card" data-name="ativador windows office">
+      <span>🔐</span>
+      <h3>Ativador</h3>
+      <p>Windows HWID e Office OHOOK.</p>
+      <strong>R$20</strong>
+      <button>Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="feedbacks" class="feedbacks">
+  <h2>Feedbacks</h2>
+
+  <div class="feedback-grid">
+    <div class="feedback">
+      <p>“Entrega rápida e atendimento bom.”</p>
+      <strong>Cliente FlowBots</strong>
+    </div>
+
+    <div class="feedback">
+      <p>“Comprei e recebi certinho.”</p>
+      <strong>Cliente FlowBots</strong>
+    </div>
+
+    <div class="feedback">
+      <p>“Loja organizada, recomendo.”</p>
+      <strong>Cliente FlowBots</strong>
+    </div>
+  </div>
+</section>
+
+<section id="termos" class="termos">
+  <h2>Termos importantes</h2>
+
+  <ul>
+    <li>Não realizamos reembolso por compra errada.</li>
+    <li>Confira garantias e informações antes da compra.</li>
+    <li>Não nos responsabilizamos por golpes de desconhecidos.</li>
+    <li>Compre apenas com membros oficiais da FlowBots Store.</li>
+    <li>Produtos digitais podem ter regras específicas.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 FlowBots Store. Todos os direitos reservados.</p>
+</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
