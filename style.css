@@ -280,4 +280,15 @@ footer{
   .hero-buttons{
     flex-direction:column;
   }
+}.hero-banner{
+  padding:40px 8%;
+  background:#020b16;
+}
+
+.hero-banner img{
+  width:100%;
+  display:block;
+  border-radius:24px;
+  border:1px solid rgba(0,234,255,0.25);
+  box-shadow:0 0 40px rgba(0,234,255,0.18);
 }
